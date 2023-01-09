@@ -1,50 +1,19 @@
-# 2022-01-09 22:48 ~ 22: 17
+# 2022-01-09 22:48 ~ 22: 17 (24)
 # 그리디 문제 
+# tip: 모든걸 탐색할 필요가 없음!!!
+# 주어진 조건에서 가장 잘 풀 수 있는 답을 생각
 
 # input
-s = [int(token) for token in input()]
-n = len(s) 
+s = input()
 
-oper = []
-li = list(range(n))
-
-max_result = 0
-
-def calcuate(oper, s):
-    cumsum = s[0]
-    for o, n in zip(oper, s[1:]):
-        if o == '+':
-            cumsum+=n
-        else:
-            cumsum *=n
-    return cumsum
-
-
-while li:
-    if len(li) > 1:
-        _min, _max = li[0], li[-1]
-        o = ['*' for _ in range(_min)] + ['+' for _ in range(_max)]
-        max_result = max(calcuate(o, s), max_result)
-    
-        o = ['*' for _ in range(_max)] + ['+' for _ in range(_min)]
-        max_result = max(calcuate(o, s), max_result)
-        
-        o = ['+' for _ in range(_max)] + ['*' for _ in range(_min)]
-        max_result = max(calcuate(o, s), max_result)
-        
-        o = ['+' for _ in range(_min)] + ['*' for _ in range(_max)]
-        max_result = max(calcuate(o, s), max_result)
-        
-        li.pop(0)
-        li.pop(-1)
+cum = 0
+for t in s:
+    t = int(t)
+    if t > 1:
+        if cum == 0:
+            cum = 1
+        cum *= t
     else:
-        o = ['*' for _ in range(li[0])] + ['+' for _ in range(li[0])]
-        max_result = max(calcuate(o, s), max_result)
-        
-        o = ['+' for _ in range(li[0])] + ['*' for _ in range(li[0])]
-        max_result = max(calcuate(o, s), max_result)
-        
-        oper.append(o)
-        li.pop(0)
+        cum += t
 
-print(max_result)
+print(cum)
