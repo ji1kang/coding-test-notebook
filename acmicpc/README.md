@@ -1,9 +1,9 @@
 # Re-Solve
 | 제목 | 1회 | 2회 | 3회 | 4회 | 5회 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| [알파벳 개수](https://www.acmicpc.net/problem/10808) |  |  |  |  |  |
-| [트럭 주차](https://www.acmicpc.net/problem/2979) |  | | | | |
-| [펠린드롬인지 확인하기](https://www.acmicpc.net/problem/10988)|  | | | | |
+| [알파벳 개수](https://www.acmicpc.net/problem/10808) | v |  |  |  |  |
+| [트럭 주차](https://www.acmicpc.net/problem/2979) | v | | | | |
+| [펠린드롬인지 확인하기](https://www.acmicpc.net/problem/10988)| v | | | | |
 | [농구 경기](https://www.acmicpc.net/problem/1159) |  | | | | |
 | [ROT13](https://www.acmicpc.net/problem/11655) |  | | | | |
 | [한국이 그리울 땐 서버에 접속하지](https://www.acmicpc.net/problem/9996) |  | | | | |
@@ -14,7 +14,7 @@
 | [비밀번호 발음하기](https://www.acmicpc.net/problem/4659) |  | | | | |
 | [기상캐스터](https://www.acmicpc.net/problem/10709) |  | | | | |
 | [분수 찾기](https://www.acmicpc.net/problem/1193) |  | | | | |
-| [손익분기점](https://www.acmicpc.net/problem/1712) |  | | | | |
+| [손익분기점](https://www.acmicpc.net/problem/1712) | v | | | | |
 | [공](https://www.acmicpc.net/problem/1547) |  | | | | |
 | [ATM](https://www.acmicpc.net/problem/11399) |  | | | | |
 | [단어 정렬](https://www.acmicpc.net/problem/1181) |  | | | | |
@@ -37,8 +37,8 @@
 | [수열](https://www.acmicpc.net/problem/2559) | | | | | |
 | [구간 합 구하기4](https://www.acmicpc.net/problem/11659) | | | | | |
 | [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | | | | | |
-| [DFS와 BFS](https://www.acmicpc.net/problem/1260) | | | | | |
-| [단지번호붙이기](https://www.acmicpc.net/problem/2667) | | | | | |
+| [DFS와 BFS](https://www.acmicpc.net/problem/1260) |25 | | | | |
+| [단지번호붙이기](https://www.acmicpc.net/problem/2667) |47| | | | |
 | [미로찾기](https://www.acmicpc.net/problem/2178) | | | | | |
 | [유기농 배추](https://www.acmicpc.net/problem/1012) | | | | | |
 | [보물섬](https://www.acmicpc.net/problem/2589) | | | | | |
@@ -102,14 +102,14 @@
 | [균형잡힌 세상](https://www.acmicpc.net/problem/4949) | | | | | |
 | [트리](https://www.acmicpc.net/problem/1068) | | | | | |
 | [완전 이진 트리](https://www.acmicpc.net/problem/9934) | | | | | |
-| [숫자 카드 2](https://www.acmicpc.net/problem/10816) | | | | | |
+| [숫자 카드 2](https://www.acmicpc.net/problem/10816) |v| | | | |
 | [수 찾기](https://www.acmicpc.net/problem/1920) | | | | | |
-| [나무 자르기](https://www.acmicpc.net/problem/2805) | | | | | |
-| [랜선 자르기](https://www.acmicpc.net/problem/1654) | | | | | |
-| [과자 나눠주기](https://www.acmicpc.net/problem/16401) | | | | | |
+| [나무 자르기](https://www.acmicpc.net/problem/2805) |v| | | | |
+| [랜선 자르기](https://www.acmicpc.net/problem/1654) |v| | | | |
+| [과자 나눠주기](https://www.acmicpc.net/problem/16401)|v| | | | |
 | [집합의 표현](https://www.acmicpc.net/problem/1717) | | | | | |
 | [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | | | | | |
-
+| [수학숙제](https://www.acmicpc.net/problem/2870) |v| | | | |
 
 # reference 
 https://raw.githubusercontent.com/KayAhn0126/SwiftCT/main/Re-Solve/README.md
