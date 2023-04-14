@@ -39,9 +39,9 @@
 | [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | | | | | |
 | [DFS와 BFS](https://www.acmicpc.net/problem/1260) |25 | | | | |
 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) |47| | | | |
-| [미로찾기](https://www.acmicpc.net/problem/2178) | | | | | |
-| [유기농 배추](https://www.acmicpc.net/problem/1012) | | | | | |
-| [보물섬](https://www.acmicpc.net/problem/2589) | | | | | |
+| [미로찾기](https://www.acmicpc.net/problem/2178) |30| | | | |
+| [유기농 배추](https://www.acmicpc.net/problem/1012) |37| | | | |
+| [보물섬](https://www.acmicpc.net/problem/2589) |*| | | | |
 | [효율적인 해킹](https://www.acmicpc.net/problem/1325) | | | | | |
 | [바이러스](https://www.acmicpc.net/problem/2606) | | | | | |
 | [알고리즘 수업 - 깊이 우선 탐색 1](https://www.acmicpc.net/problem/24479) | | | | | |
