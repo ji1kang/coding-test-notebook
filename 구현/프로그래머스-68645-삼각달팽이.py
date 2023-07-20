@@ -7,11 +7,10 @@ def solution(n):
     """
     
     index = 0
-    state = {}
+    state = [None] * (n + 1)
     for depth in range(1, n + 1):
         state[depth] = [index, index + depth - 1]
         index += depth
-    
     
     count = 0
     command = 'down'
@@ -22,7 +21,6 @@ def solution(n):
     answer = [None] * (num_answer)
     
     while count < num_answer:
-
         if command == 'down':
             answer[ state[depth][0] ] = count + 1
             state[depth][0] += 1
