@@ -14,7 +14,7 @@ def solution(record):
     - 닉네임이 같을 수 있기 떄문에 uid로 관리 해야함
     """    
     from collections import defaultdict
-    uid2nick = defaultdict(list)
+    uid2nick = defaultdict(str)
     answer = []
     
     # 변경 작업
