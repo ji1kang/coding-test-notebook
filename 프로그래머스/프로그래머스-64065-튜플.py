@@ -1,5 +1,4 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/64065
-
 def solution(s):
     """
     2100 - 2129
@@ -8,13 +7,12 @@ def solution(s):
     - set()을 return 하는 과정에서 생기는 문제였음
     
     """
-    s = s[1:-1] + ',' # 문자열 다루기 편하게 변환해줌
+    s = s[1:-1] + ','
     answer = []
     
     for subset in sorted(s.split('},'), key = lambda x: len(x))[1:]:
-        for item in map(int, subset[1:].split(',')):
-            if item not in answer:
-                answer.append(item)
-                break
+        outer = set(subset[1:].split(',')) - set(answer)
+        answer.append(list(outer).pop(0))
+            
     
-    return answer
+    return list(map(int, answer))
