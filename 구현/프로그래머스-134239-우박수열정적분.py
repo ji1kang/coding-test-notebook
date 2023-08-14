@@ -8,28 +8,9 @@ def collatz(k):
             k //= 2
         else:
             k = (k * 3) + 1
-            
         result.append(k)
     return result
 
-def integral(x1, x2, y):
-    area = 0
-    
-    for x in range(x1, x2 - 1):
-        
-        y1 = y[x]
-        y2 = y[x + 1]
-        
-        max_h = max(y1, y2)
-        w = 1
-        min_h = abs(y1 - y2)
-
-        square_area = max_h * w
-        tri_area = (min_h * w) / 2
-        
-        area += (square_area - tri_area)
-    
-    return area
 
 def solution(k, ranges):
     """
@@ -42,14 +23,25 @@ def solution(k, ranges):
     answer = []
     y = collatz(k)
     n = len(y)
+    area_arr = [-1] * n
+    
+    def integral(x1, x2):
+        nonlocal area_arr, y
+        result = 0
+        for x in range(x1, x2 - 1):
+            if area_arr[x] == -1:
+                area = (y[x] + y[x + 1]) / 2 
+                area_arr[x] = area
+            result += area_arr[x]
+        return result
     
     for a, b in ranges:
 
         # 1. [0,0] 구간
         if a == b == 0:
             #  이를 [0,0] 구간에 대해 정적분 한다면 전체 구간에 대한 정적분이며
-            answer.append(integral(a, len(y), y))
-            print(a, b)
+            answer.append(integral(a, len(y)))
+            print(a, b, area_arr)
             continue
         
         # 2. b가 0 또는 음수라면 [a, b]에 대한 정적분 결과는 x = a, x = n - b
@@ -62,7 +54,6 @@ def solution(k, ranges):
             answer.append(-1)
         else:
             # 3 -2. 보통의 경우
-            answer.append(integral(a, b, y))
-    
+            answer.append(integral(a, b))
     
     return answer
